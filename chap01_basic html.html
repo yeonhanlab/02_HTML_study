@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        meta 태그 : 문서의 문자 인코딩을 저장하는 태그
+        - charset : 문서의 문자 인코딩을 지정
+        -->
+    <meta charset="UTF-8">
+    <!--
+        title 태그 : 문서의 제목 지정
+     -->
+    <title>라인컴퓨터아트학원</title>
+</head>
+<body>
+<!--
+    h1 ~ h6 : 제목에 대한 예제
+            :  의미론적으로 h1이 가장 큰 제목, h6로 갈 수록 작은 제목
+            block 요소
+    -->
+<h1>이것은 h1태그입니다</h1>
+<h2>이것은 h2태그입니다</h2>
+<h3>이것은 h3태그입니다</h3>
+<h4>이것은 h1태그입니다</h4>
+<h5>이것은 h2태그입니다</h5>
+<h6>이것은 h3태그입니다</h6>
+<span>이것은 일반<br/>글자입니다</span>
+
+<!--
+    hr : 절취선을 나타낼 때
+       : block 요소
+       -->
+<hr/>
+<!--
+    strong : 글자를 굵게 나타낼 때 / inline 요소 (잘 안쓴다)
+    mark : 형광펜 효과를 넣을 때 / inline 요소 (잘 안쓴다)
+    -->
+
+<strong>굵게 표시</strong>
+<mark>형광펜 효과</mark>
+
+<!--
+    목록을 나타내는 태그 2종류
+    ul : unordered list (순서 없는 목록)
+    ol : ordered list(순서 있는 목록)
+    -->
+<ul>
+    <li>순서 없는 목록</li>
+    <li>순서 없는 목록</li>
+    <li>순서 없는 목록</li>
+</ul>
+<ol type="A" start="1">
+    <li>순서 있는 목록</li>
+    <li>순서 있는 목록</li>
+    <li>순서 있는 목록</li>
+</ol>
+
+<!--
+    table : 표를 그리는 태그
+    - thead : 제목 줄을 묶는 태그
+    - tbody  : 제목 줄 외의 내용 줄을 묶는 태그
+    - tfooter : 하단에 합계 등을 나타낼 때 사용할 수 있는 태그
+
+
+    - tr : 한 줄을 묶는 태그
+    - th : 제목 줄에서 한 셀을 묶는 태그
+    - td : 제목 줄 외의 줄에서 한 셀을 묶는 태그
+    -->
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>프로토콜</th>
+            <th>포트번호</th>
+            <th>설명</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <tr>
+        <td>HTTP</td>
+        <td>80</td>
+        <td>보안이 되지 않은 웹서비스 통신</td>
+    </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>프로토콜</th>
+        <th>포트번호</th>
+        <th>설명</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+    <tr>
+        <td>HTTP</td>
+        <td colspan="2">2개 셀 합치기</td>
+    </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>프로토콜</th>
+        <th>포트번호</th>
+        <th>설명</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+    <tr>
+        <td rowspan="2">HTTP</td>
+        <td>80</td>
+        <td>보안이 되지 않은 웹서비스 통신</td>
+    </tr>
+    <tr>
+        <td>80</td>
+        <td>보안이 되지 않은 웹서비스 통신</td>
+    </tr>
+    </tbody>
+</table>
+
+<div>이것은 div 태그입니다</div>
+<span>이것은 span 태그입니다</span>
+
+<!--
+    img 태그 : 그림 파일을 삽입하는 태그
+    필수 속성 - src : 그림 파일 경로
+               alt : 그림 파일에 대한 설명
+               -->
+<img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202412/02/406c3841-2b5e-4307-b5b5-ee6bcbd5440c.jpg"
+     alt="지디지디"/>
+
+<!--
+      a태그 : 링크를 거는 태그
+      필수속성 - href : 링크 주소
+      속성 - target : 어디에 화면을 띄울 것인지 결정하는 속성
+      -->
+<a href="https://www.google.com" target="_self">구글로 가는 링크
+    <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202412/02/406c3841-2b5e-4307-b5b5-ee6bcbd5440c.jpg"
+         alt="지디지디"/>
+</a>
+
+<!--
+    form 태그 : 사용자에게 입력받기 위한 태그들을 묶는 태그
+    -->
+<form>
+    <!--
+        input태그 : 실질적으로 사용자에게 입력을 받기 위한 태그 (inline요소)
+        필수 속성 - type : 어떤 형태로 사용자에게 입력을 받을 것인지 결정
+                        : 생략하면 text로 동작함 (기본값)
+                        -->
+
+    <input type="text"/><br/>
+    <input type="password"/> <br/>
+    <input type="checkbox"/> 동의합니다
+    <input type="email"/> <br/>  <!-- 이메일형식여야함 -->
+    <input type="date"/> <br/>
+    <input type="file"/> <br/>
+    <input type="radio" name="gender"/> 남자 <input type="radio" name="gender"/> 여자 <br/>
+    <input type="tel" />   <br/>
+    <input type="number"/> <br/>
+    <input type="color"/> <br/>
+
+
+    <!--
+        label 태그 : input, select 태그와 짝꿍
+                    해당 input이 무엇을 입력받으려고 하는지 알려주는 기능도 함
+
+                    -->
+    <label>
+            회원ID<br/>
+            <input type="text"/>
+    </label><br/>
+
+    <label for="userId"> 회원ID</label><br/>
+    <input type="text" id="userId"/><br/>
+
+    <!--
+        select 태그 : 사용자에게 펼침메뉴를 통해 선택을 받을 수 있게 하는 태그
+        option 태그 : select 자식 요소로 사용되어야 하며, 각각 항목을 설정하는 태그
+                    - 필수속성 : value - 실제로 사용되는 값
+                    - 속성 : selected - 선택된 항목을 표시함
+    -->
+
+    <select>
+        <option value="010">010</option>
+        <option value="011" >011</option>
+        <option value="016" >016</option>
+        <option value="017" >017</option>
+        <option value="019" selected>019</option>
+    </select> <br/>
+
+    <!--
+        button 태그 : 버튼을 만드는 태그
+    -->
+    <button>회원가입</button>
+
+</form>
+
+
+
+</body>
+
+</html>

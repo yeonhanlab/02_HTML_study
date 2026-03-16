@@ -1,0 +1,111 @@
+/*
+    후손 선택자 : div 안의 p라고 하는 자식은 적용받음
+*/
+
+div p {color: #a15555;}
+
+
+
+/*
+       자식 선택자 : >를 붙여서 div 안의 직계 자식인 p에 적용받음
+ */
+
+div > p {
+    color: #47acac;
+}
+
+
+/*
+     클래스 선택자 : class 속성에 부여된 이름에 적용
+     ( .을 찍어서 표현) CSS Cascadig 방식이므로 순서 매우 중요.
+*/
+.fontSize {font-size: 20px;}
+
+
+/*
+        ID 선택자 : id속성에 부여된 이름에 적용하나 id는 유일해야 함
+ */
+#a {color: #4d3e72;}
+
+
+button { background-color: #fcc5c5; color: white;}
+
+/*
+     반응 선택자 :
+       :hover(떠있다) => 마우스가 위로 올라갔을 때 적용되는 CSS
+       :active => 버튼이 눌렸을 때 적용되느느 CSS
+       :focus => 입력 요소가 포커스(선택)를 받았을 때 적용되는 CSS
+ */
+button:hover {background-color : #9595ff;}
+
+button:active {background-color : #e0ffbf;}
+
+input {padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+input:focus {outline: none; border: 1px solid #af6d6d;}
+
+.fontSize:focus {}
+
+input[type="checkbox"] {
+    appearance: none; /*웹 브라우저의 기본 스타일 제거 */
+    width: 20px;
+    height: 20px;
+    border: 1px solid #976993; border-radius: 50%;}
+
+
+input:checked{
+    background-color : #a5a55f;}
+
+
+input:disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+table {
+    border-collapse: collapse;   /* 테이블 셀 간격 제거
+                                      -> 외곽선이 합쳐지는 효과 */
+    width: 60%;
+    margin: 20px auto;
+
+}
+
+
+th, td {
+    height: 100px;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* 표 안에서는 flex 사용하면 안됨 div에서나 사용 */
+
+/* 구조 선택자
+       :first-child : 한 개 이상의 th가 있다면 그 중 첫 번째에 부여
+       :last-child : 한 개 이상의 th가 있다면 그 중 마지막에 부여
+       :nth-child() : 한 개 이상의 th가 있다면 그 중 특정 번째에 부여
+                      => even : 짝수 번째
+                      => odd : 홀수 번째
+                      => n을 이용해서 쓰는게 정석
+                            2n - 1 : 홀수 번째
+                            2n : 짝수 번째
+                            3n : 3의 배수
+*/
+th:first-child {
+    background-color: #8ebaa6;
+
+}
+
+th:last-child {
+    background-color : #f1b6b6;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #aaaaaa;
+
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #e2d9d9;
+}
