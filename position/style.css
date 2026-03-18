@@ -1,0 +1,61 @@
+.box {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e74c3c;
+}
+
+.fixed {   /*화면 전체를 기준으로 */
+    position: fixed;      /* 화면에 고정 */
+    /* 위치를 잡는건 top 또는 bottom, 그리고 left 또는 right를 써서 이동 */
+    bottom : 50px;
+    right: 50px;
+    background-color: #ac6d6d;
+
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.sticky {   /* 스크롤이 있는 부모를 기준으로 */
+    position: sticky; /* 스크롤에 동작하다 원하는 위치에 가면 고정 */
+    top: 0px;
+    background-color: #5dc76b;
+
+}
+
+.spacer {
+    height: 400px;
+    background-color: #c3c4c3;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #adb5bd;
+    border-radius: 8px;
+}
+
+
+.parent {
+    position: relative;
+    background-color: #ecf0f1;
+    padding: 40px;
+    border: 2px dashed #95a5a6;
+    z-index : 5;
+}
+
+.child {
+    /* 부모중 가장 가까운 "relative"가 선언이 된 조상의 위치를 기준으로 자리를 잡겠다. 없으면 body에 꽂힘*/
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: #3498db;
+}
+
