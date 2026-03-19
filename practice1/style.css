@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/mona.css');
+
+body {
+    font-family: "Mona8x12", sans-serif;
+    /*
+           flex가 가로 방향일 때에는 자식들이 부모 요소의 높이값으 따라가게 되고,
+           flex가 세로 방향일 때에는 자식들이 부모 요소의 가로값을 따라가게 됨
+
+     */
+
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    color: #2d3436;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+
+.title-bar {
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.tap {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0;
+    color: #a0aec0;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+
+}
+
+.tap:hover {
+    color: #475569;
+    background-color: #cbd5e1;
+
+}
+.tap span {
+    transform: rotate(-90deg);
+}
+
+
+main {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;  /*ul은 패딩이 적용되있어서 */
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+
+.nav-item {
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-bottom: 3px solid transparent;   /* transparent : 투명 */
+    margin-bottom: -2px;
+}
+
+
+.nav-item:hover {
+    color: #3b82f6;
+    border-bottom: 3px solid #3b82f6;
+}
+
+
+.main-titleBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.breadcrumbs {
+    display: flex;
+    gap: 20px;
+    color: #3b82f6
+}
+
+.slash {
+    color: #94a3b8;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.project-imageWrapper {
+    overflow: hidden;        /* 이 영역을 넘어서는게 있으면 (그게 자식이라도) 자르겠다 */
+    border-radius: 12px;
+}
+
+
+.project-imageWrapper img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
+}
+
+.project-imageWrapper img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.project-title  {
+    font-weight: 600px;
+    font-size: 18px;
+    text-align: center;
+    color: #3b82f6;
+
+}
