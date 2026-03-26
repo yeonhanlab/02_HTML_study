@@ -2,7 +2,9 @@
     후손 선택자 : div 안의 p라고 하는 자식은 적용받음
 */
 
-div p {color: #a15555;}
+div p {
+    color: #a15555;
+}
 
 
 
@@ -19,30 +21,44 @@ div > p {
      클래스 선택자 : class 속성에 부여된 이름에 적용
      ( .을 찍어서 표현) CSS Cascadig 방식이므로 순서 매우 중요.
 */
-.fontSize {font-size: 20px;}
+.fontSize {
+    font-size: 20px;
+}
 
 
 /*
         ID 선택자 : id속성에 부여된 이름에 적용하나 id는 유일해야 함
  */
-#a {color: #4d3e72;}
+#a {
+    color: #4d3e72;
+}
 
 
-button { background-color: #fcc5c5; color: white;}
+button {
+    background-color: #fcc5c5; color: white;
+}
 
 /*
      반응 선택자 :
        :hover(떠있다) => 마우스가 위로 올라갔을 때 적용되는 CSS
-       :active => 버튼이 눌렸을 때 적용되느느 CSS
+       :active => 버튼이 눌렸을 때 적용되는 CSS
        :focus => 입력 요소가 포커스(선택)를 받았을 때 적용되는 CSS
  */
-button:hover {background-color : #9595ff;}
+button:hover {
+    background-color : #9595ff;
+}
 
-button:active {background-color : #e0ffbf;}
+button:active {
+    background-color : #e0ffbf;
+}
 
-input {padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+input {
+    padding: 10px; border: 1px solid #ccc; border-radius: 5px;
+}
 
-input:focus {outline: none; border: 1px solid #af6d6d;}
+input:focus {
+    outline: none; border: 1px solid #af6d6d;
+}
 
 .fontSize:focus {}
 

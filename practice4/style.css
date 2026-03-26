@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #7d4aa9;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background : black;
+    width: 100%;
+    max-width: 1300px;
+    height: 90%;
+    border-radius: 40px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+
+}
+
+
+main {
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+}
+
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.card {
+    border-radius: 24px;
+}
+
+.header-card {
+    background-color: white;
+    padding: 40px;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.row {
+    height: calc((100% - 40px)/ 3);
+    gap: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating {
+    font-size: 18px;
+}
+
+.badge {
+    background-color: #c6c6c6;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-top: 2px;
+}
+
+.header-title {
+    font-size: 110px;
+    font-weight: 900;
+    color: #111;
+    text-align: center;
+}
+
+.header-subtitle {
+    font-size: 26px;
+    line-height: 1.3;   /*줄 간견*/
+    border-top: 3px solid #111;
+    padding-top: 24px;
+}
+
+.img-card {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-card {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    flex: 1.3;
+    justify-content: space-between;
+}
+
+.collab-box {
+    border-radius: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 16px 20px;
+    color: #111;
+    text-align: center;
+}
+
+.collab-cta {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.footer-card {
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+    padding: 30px;
+}
+
+.box-yellow {
+    background-color: #ffc830;
+}
+
+.box-white {
+    background-color: white;
+    transform: rotateZ(6deg);
+    margin-top: -12px;
+    margin-left: 15px;
+}
+
+.collab {
+    flex: 1.3;
+    justify-content: center;
+}
+
+.nav-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-card span {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.img-1 {
+    background-image: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop");
+}
+
+.img-2 {
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop");
+}
+
+.img-3 {
+    background-image: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop");
+}
+
+.img-4 {
+    background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop")
+}
