@@ -217,6 +217,7 @@ body {
 
 .img-container:hover .shoe-img {
     transform: rotate(-5deg) translateY(-40px) scale(1.15);
+
 }
 
 .features {
