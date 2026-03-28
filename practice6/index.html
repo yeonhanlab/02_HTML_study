@@ -6,14 +6,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <div class="head">
-        <h1>Device Management</h1>
-        <span>Total 4 Devices</span>
+<div class="list-container">
+    <div class="list-header">
+        <div class="header-title">
+            <h2>Device Management</h2>
+            <span class="device-count">Total 4 Devices</span>
+        </div>
+        <button class="btn-add">+ Add Device</button>
     </div>
-    <div>
-        <Table>
-
+    <div class="table-wrapper">
+        <Table class="device-table">
+            <thead>
+            <tr>
+                <th>device name</th>
+                <th>location</th>
+                <th>status</th>
+                <th>battery</th>
+                <th>actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="list1"></div>
+                    <div>Smart Bulb A</div>
+                </td>
+                <td>Living Room</td>
+                <td>Online</td>
+                <td>85%</td>
+                <td>Edit</td>
+            </tr>
+            </tbody>
         </Table>
     </div>
 </div>
