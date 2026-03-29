@@ -130,15 +130,15 @@ body {
 
 
 .icon-thermostat {
-    background-color: #ffc791;
+    background-color: #fed7aa;
 }
 
 .icon-coffee {
-    background-color: #dccfec;
+    background-color: #e2e8f0;
 }
 
 .icon-camera {
-    background-color: #a5d9e8;
+    background-color: #bae6fd;
 }
 
 .device-name {
@@ -168,25 +168,25 @@ body {
 }
 
 .badge-offline {
-    background-color: #ffd7d7;
-    color: #592b2b;
+    background-color: #fee2e2;
+    color: #991b1b;
 }
 
-.badge-standy {
-    background-color: #f4f3af;
-    color: #736b42;
+.badge-standby {
+    background-color: #fef9c3;
+    color: #854d0e;
 }
 
 .badge-online .status-dot {
     background-color: #22c55e;
 }
 
-.badge-standy .status-dot {
-    background-color: #baad3a;
+.badge-standby .status-dot {
+    background-color: #eab308;
 }
 
 .badge-offline .status-dot {
-    background-color: #cc2b39;
+    background-color: #ef4444;
 }
 .battery-wrapper {
     display: flex;
@@ -208,19 +208,40 @@ body {
     border-radius: 4px;
 }
 
+.fill-low {
+    background-color: #ef4444;
+}
+
+.text-low {
+
+}
 .battery-low {
     height: 100%;
-    background-color: #bf2020;
+    background-color: #ef4444;
     border-radius: 4px;
 }
+
+
+.text-low {
+    color: #ef4444;
+    font-weight: 600;
+}
+
 .battery-text {
     font-size: 14px;
     color: #64748b;
     width: 35px;
 }
 
+.text-low {
+    color: #ef4444;
+    font-weight: 600;
+}
+
 .plugged-in {
-    font-style: Italic;
+    font-style: italic;
+    color: #64748b;
+    font-size: 14px;
 }
 
 .btn-edit {
