@@ -128,7 +128,114 @@ body {
     background-color: #fef08a;
 }
 
+
+.icon-thermostat {
+    background-color: #ffc791;
+}
+
+.icon-coffee {
+    background-color: #dccfec;
+}
+
+.icon-camera {
+    background-color: #a5d9e8;
+}
+
 .device-name {
     font-weight: 500;
     color: #0f172a;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    gap: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.badge-online {
+    background-color: #dcfce7;
+    color: #166545;
+}
+
+.badge-offline {
+    background-color: #ffd7d7;
+    color: #592b2b;
+}
+
+.badge-standy {
+    background-color: #f4f3af;
+    color: #736b42;
+}
+
+.badge-online .status-dot {
+    background-color: #22c55e;
+}
+
+.badge-standy .status-dot {
+    background-color: #baad3a;
+}
+
+.badge-offline .status-dot {
+    background-color: #cc2b39;
+}
+.battery-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.battery-bar {
+    background-color: #e2e8f0;
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.battery-fill {
+    height: 100%;
+    background-color: #10b981;
+    border-radius: 4px;
+}
+
+.battery-low {
+    height: 100%;
+    background-color: #bf2020;
+    border-radius: 4px;
+}
+.battery-text {
+    font-size: 14px;
+    color: #64748b;
+    width: 35px;
+}
+
+.plugged-in {
+    font-style: Italic;
+}
+
+.btn-edit {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-edit:hover {
+    background-color: #f1f5f9;
+    border-color: #94a3b8;
 }
